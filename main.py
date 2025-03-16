@@ -3,6 +3,7 @@ from werkzeug.utils import secure_filename
 import os
 import fitz #PyMuPDF for PDF Processing
 import docx #python-docx for Word file Processing
+from frontend import *
 
 app=Flask(__name__)
 @app.route('/')
