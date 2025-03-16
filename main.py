@@ -45,6 +45,7 @@ def upload_resume():
     file = request.files["file"]
     if file.filename == "":
         return jsonify({"error": "No selected file"}), 400
+        return jsonify({"message": "Resume uploaded successfully"}), 200
 
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
